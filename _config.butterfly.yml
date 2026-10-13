@@ -1,0 +1,266 @@
+# ===== Butterfly 主题配置（覆盖 node_modules 中的默认配置）=====
+# 官方文档：https://butterfly.js.org/
+
+# ---------- Navigation ----------
+favicon: /img/favicon.ico
+nav:
+  logo:
+  display_title: true
+  fixed: true   # 导航栏吸顶，滚动时保持可见
+
+# 菜单顺序参考 hmxs.games：主页 / 关于 / 分类 / 标签 / 归档 / 友链
+menu:
+  主页: / || fas fa-home
+  工作经历: /categories/work/ || fas fa-briefcase
+  作品集: /categories/portfolio/ || fas fa-gamepad
+  关于: /about/ || fas fa-heart
+  分类: /categories/ || fas fa-folder-open
+  标签: /tags/ || fas fa-tags
+  归档: /archives/ || fas fa-archive
+  友链: /link/ || fas fa-link
+
+# ---------- 首页站点信息（Banner 中央区）----------
+# 打字机效果的副标题（Typed.js）
+subtitle:
+  enable: true
+  effect: true        # 开启打字机效果
+  loop: true
+  source: false       # 不从外部一言 API 拉，使用 sub 列表
+  sub:
+    - "Weathering with games."
+    - "ゲームをしましょう！"
+    - "Gameplay · Graphics · Craft"
+    - "一个游戏设计师的思考留痕"
+
+# ---------- Code Blocks ----------
+highlight_theme: mac light
+highlight_copy: true
+highlight_lang: true
+highlight_shrink: false
+highlight_height_limit: false
+code_word_wrap: false
+
+# ---------- Social ----------
+avatar:
+  img: /img/portfolio/Avatar.jpg
+  effect: false
+
+social:
+  fab fa-github: https://github.com/Littledream3 || GitHub
+  fab fa-bilibili: https://space.bilibili.com/410380625 || Bilibili
+  fas fa-envelope: mailto:18368173805@163.com || Email
+
+# ---------- Image (首页头图/封面)----------
+# Banner 图（用户提供，已压缩至 0.55MB）
+index_img: /img/banner_traveler.jpg
+default_top_img: /img/banner_traveler.jpg
+archive_img:
+tag_img:
+category_img:
+
+# 首页封面图：不设置时用 default_cover（此处用默认）
+cover:
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  default_cover:
+
+# ---------- Article ----------
+toc:
+  post: true
+  page: true
+  number: true
+  expand: false
+  style_simple: false
+  scroll_percent: true
+
+post_copyright:
+  enable: true
+  decode: false
+  author_href:
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# 文章页显示更新时间
+post_meta:
+  page:
+    date_type: both
+    date_format: date
+    categories: true
+    tags: true
+    label: true
+  post:
+    date_type: both
+    date_format: date
+    categories: true
+    tags: true
+    label: true
+
+# 首页文章卡片摘要：method 2 = 优先取 front-matter 的 description，没有才截正文
+index_post_content:
+  method: 2
+  length: 100
+
+# ---------- Sidebar ----------
+# widget 顺序参考 hmxs.games：
+# author -> announcement -> recent-post -> categories -> tags -> archives -> webinfo
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+  display:
+    archive: true
+    tag: true
+    category: true
+  card_author:
+    enable: true
+    description: 游戏真是太有意思了
+    button:
+      enable: true
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/Littledream3
+  card_announcement:
+    enable: true
+    content: 欢迎来到天小梦的小站 🎮 。
+  card_recent_post:
+    enable: true
+    limit: 5
+    sort: date
+    sort_order:
+  card_categories:
+    enable: true
+    limit: 8
+    expand: none
+    sort_order:
+  card_tags:
+    enable: true
+    limit: 40
+    color: true     # 彩色标签云（参考目标站）
+    sort_order:
+  card_archives:
+    enable: true
+    type: monthly
+    format: MMMM YYYY
+    order: -1
+    limit: 8
+    sort_order:
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+    sort_order:
+
+# ---------- Local Search ----------
+search:
+  use: local_search
+  placeholder: 搜索文章
+  local_search:
+    preload: false
+    top_n_per_article: 1
+    unescape: false
+    CDN:
+
+# ---------- 顶部进度条（pace-js）----------
+pace:
+  enable: true
+  # theme options：minimal / center-simple / flash / center-atom / ...
+  theme: minimal
+
+# ---------- Footer ----------
+footer:
+  owner:
+    enable: true
+    since: 2026
+  copyright:
+    enable: true
+    version:
+  custom_text:
+
+# ---------- Color / Theme（莫兰迪色系 Morandi）----------
+theme_color:
+  enable: true
+  main: "#A8B5A0"                # 雾绿 - 主色
+  paginator: "#C8B6A6"           # 米驼 - 分页
+  button_hover: "#9D8189"        # 豆沙粉 - 悬停
+  text_selection: "#B8C5B0"      # 浅雾绿 - 文字选中
+  link_color: "#8E9AAF"          # 雾蓝 - 超链接
+  meta_color: "#8A8A8A"          # 中性灰 - 元信息
+  hr_color: "#D4CCC0"            # 浅米色 - 分隔线
+  code_foreground: "#B58863"     # 暖咖 - 行内代码前景
+  code_background: "rgba(168, 181, 160, 0.08)"  # 极淡雾绿 - 行内代码背景
+  toc_color: "#9D8189"           # 豆沙粉 - 目录高亮
+  blockquote_padding_color: "#A8B5A0"        # 引用块边框
+  blockquote_background_color: "#EFEAE2"     # 莫兰迪米白 - 引用块背景
+  scrollbar_color: "#A8B5A0"     # 雾绿 - 滚动条
+
+# ---------- Darkmode ----------
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: 1    # 1: 跟随系统; 2: 固定时间段切换
+  start:
+  end:
+
+# ---------- 右侧工具栏 ----------
+rightside_bottom: 0
+rightside:
+  readmode: true
+  aside_button: true
+
+# ---------- Analytics / Comments (暂不启用) ----------
+# waline / twikoo / gitalk 等，等你需要的时候再开
+
+# ---------- Mathjax / Katex ----------
+mathjax:
+  enable: false
+  per_page: false
+
+# ---------- Pjax（页面不刷新切换）----------
+pjax:
+  enable: true
+  exclude:
+
+# ---------- CDN ----------
+CDN:
+  internal_provider: local
+  third_party_provider: jsdelivr
+
+# ---------- Inject（注入自定义 HTML / CSS / JS）----------
+# 入场"拉幕"加载动画：参考 purpleditine.top
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/preloader.css">
+    - <link rel="stylesheet" href="/css/title-animate.css">
+    - <link rel="stylesheet" href="/css/anime-effects.css">
+  bottom:
+    - >-
+      <div id="loading-box">
+        <div class="loading-left-bg"></div>
+        <div class="loading-right-bg"></div>
+        <div class="spinner-box">
+          <div class="configure-border-1"><div class="configure-core"></div></div>
+          <div class="configure-border-2"><div class="configure-core"></div></div>
+          <div class="loading-word">loading...</div>
+        </div>
+      </div>
+      <script>
+      (function(){
+        var endLoading=function(){
+          document.body.style.overflow='auto';
+          var el=document.getElementById('loading-box');
+          if(el)el.classList.add('loaded');
+        };
+        if(document.readyState==='complete'){endLoading();}
+        else{window.addEventListener('load',endLoading);}
+        setTimeout(endLoading,3500);
+      })();
+      </script>
+    - <script src="/js/title-animate.js" defer></script>
+    - <script src="/js/scroll-reveal.js" defer></script>
+    - <script src="/js/svg-draw.js" defer></script>
+    - <script src="/js/portfolio-filter.js?v=2" defer></script>
+
+
