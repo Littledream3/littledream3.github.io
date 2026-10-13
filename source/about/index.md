@@ -9,7 +9,7 @@ aside: false
 
 你好，我是 **天小梦** 🎮
 
-- 🎨 一名已毕业的中传游戏系学生
+- 🎨 一名即将毕业的电子信息硕士
 - 🛠️ 常用：Unity、Unreal Engine、GameEditor、虚幻盒子
 - 📚 兴趣：ACGN
 - 🎯 严肃打工中
