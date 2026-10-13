@@ -42,7 +42,7 @@ code_word_wrap: false
 
 # ---------- Social ----------
 avatar:
-  img: /img/portfolio/Avatar.jpg
+  img: /img/avatar-cat.jpg
   effect: false
 
 social:
