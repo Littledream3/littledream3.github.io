@@ -7,7 +7,8 @@ tags:
   - 阴阳师
   - 系统策划
   - 系统拆解
-cover: /img/portfolio/yys-douji-framework.png
+top_img: /img/portfolio/yys-douji-banner.png
+cover: /img/portfolio/yys-douji-cover.png
 description: 从新区与老区的斗技经历出发，拆解禁选翻牌、局内战斗、养成循环与先后手体验，并提出可验证的优化思路。
 copyright_author: 天小梦
 ---
