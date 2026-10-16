@@ -1,6 +1,8 @@
 ---
 title: "《万技迷林》｜3v3 随机技能对抗模式策划"
-date: 2026-10-16 12:00:00
+date: 2026-08-22 12:00:00
+updated: 2026-08-22 12:00:00
+permalink: posts/2026/10/16/wanji-milin/
 categories:
   - 作品集
 tags:

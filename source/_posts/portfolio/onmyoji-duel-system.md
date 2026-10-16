@@ -1,6 +1,8 @@
 ---
 title: "《阴阳师》斗技系统拆解｜翻牌博弈与养成循环"
-date: 2026-10-15 16:00:00
+date: 2026-06-18 16:00:00
+updated: 2026-06-18 16:00:00
+permalink: posts/2026/10/15/onmyoji-duel-system/
 categories:
   - 作品集
 tags:
