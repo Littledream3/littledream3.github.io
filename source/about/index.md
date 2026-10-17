@@ -24,5 +24,5 @@ aside: false
 
 - 📧 **邮箱**：[18368173805@163.com](mailto:18368173805@163.com)
 - 🐙 **GitHub**：[@Littledream3](https://github.com/Littledream3)
-- 📺 **Bilibili**：[个人空间](https://space.bilibili.com/410380625)
+- 📺 **YouTube**：[个人频道](https://www.youtube.com/@littledream3ovo)
 
