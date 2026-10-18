@@ -1,0 +1,187 @@
+/* Resume additions inherit Butterfly's type, surfaces and Morandi palette. */
+.resume-page {
+  --resume-accent: #a8b5a0;
+  --resume-accent-hover: #9d8189;
+  --resume-button-ink: #243024;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+#article-container .resume-intro h2 {
+  margin: 0 0 14px;
+  padding: 0;
+  font-size: 1.8em;
+  line-height: 1.5;
+}
+
+#article-container .resume-intro h2::before,
+#article-container .resume-preview-heading h3::before {
+  display: none;
+}
+
+.resume-intro h2 span {
+  display: inline-block;
+  margin-left: 20px;
+  color: var(--font-color);
+  font-size: 0.5em;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+#article-container .resume-summary {
+  margin: 0 0 24px;
+  color: var(--font-color);
+  line-height: 1.9;
+}
+
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#article-container a.resume-button {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 9px 23px;
+  border: 1px solid var(--resume-accent);
+  border-radius: 8px;
+  font-size: 0.95em;
+  line-height: 1.6;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+#article-container a.resume-button-primary {
+  background: var(--resume-accent);
+  color: var(--resume-button-ink);
+  font-weight: 600;
+}
+
+#article-container a.resume-button-secondary {
+  background: transparent;
+  color: var(--font-color);
+}
+
+#article-container a.resume-button:hover {
+  border-color: var(--resume-accent-hover);
+  background: var(--resume-accent-hover);
+  color: #172017;
+}
+
+#article-container a.resume-button:focus-visible,
+#article-container .resume-more a:focus-visible,
+#card-info-btn[href='/files/ling-chao-resume.pdf']:focus-visible {
+  outline: 2px solid var(--font-color);
+  outline-offset: 4px;
+}
+
+#aside-content #card-info-btn[href='/files/ling-chao-resume.pdf'] {
+  background: #a8b5a0;
+  color: #243024;
+}
+
+#aside-content #card-info-btn[href='/files/ling-chao-resume.pdf']:hover {
+  background: #9d8189;
+  color: #172017;
+}
+
+.resume-preview-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 40px 0 16px;
+}
+
+#article-container .resume-preview-heading h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+}
+
+.resume-preview-heading > span,
+.resume-preview figcaption {
+  color: var(--font-color);
+  font-size: 0.85em;
+}
+
+.resume-preview figure {
+  margin: 0 0 25px;
+}
+
+#article-container .resume-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid var(--light-grey);
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgb(69 79 66 / 7%);
+}
+
+.resume-preview figcaption {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#article-container .resume-more {
+  margin: 32px 0 0;
+  line-height: 1.9;
+}
+
+.resume-more a {
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+.resume-more i {
+  margin-left: 7px;
+  font-size: 0.85em;
+}
+
+.resume-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  #article-container .resume-intro h2 {
+    font-size: 1.65em;
+  }
+
+  .resume-intro h2 span {
+    display: block;
+    margin: 5px 0 0;
+    font-size: 0.57em;
+  }
+
+  #article-container a.resume-button {
+    flex: 1 1 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .resume-preview-heading {
+    margin-top: 30px;
+  }
+
+  .resume-more a {
+    margin-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #article-container a.resume-button {
+    transition: none;
+  }
+}

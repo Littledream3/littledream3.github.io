@@ -13,6 +13,7 @@ menu:
   主页: / || fas fa-home
   工作经历: /categories/work/ || fas fa-briefcase
   作品集: /categories/portfolio/ || fas fa-gamepad
+  简历: /resume/ || fas fa-file-alt
   关于: /about/ || fas fa-heart
   分类: /categories/ || fas fa-folder-open
   标签: /tags/ || fas fa-tags
@@ -119,9 +120,9 @@ aside:
     description: 游戏真是太有意思了
     button:
       enable: true
-      icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/Littledream3
+      icon: fas fa-download
+      text: 下载简历
+      link: /files/ling-chao-resume.pdf
   card_announcement:
     enable: true
     content: 欢迎来到天小梦的小站 🎮 。
@@ -235,6 +236,7 @@ inject:
     - <link rel="stylesheet" href="/css/preloader.css">
     - <link rel="stylesheet" href="/css/title-animate.css">
     - <link rel="stylesheet" href="/css/anime-effects.css">
+    - <link rel="stylesheet" href="/css/resume.css">
   bottom:
     - >-
       <div id="loading-box">
