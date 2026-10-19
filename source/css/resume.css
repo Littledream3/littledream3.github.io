@@ -75,17 +75,17 @@
 
 #article-container a.resume-button:focus-visible,
 #article-container .resume-more a:focus-visible,
-#card-info-btn[href='/files/ling-chao-resume.pdf']:focus-visible {
+#card-info-btn[href='/files/ling-chao-resume-20261020.pdf']:focus-visible {
   outline: 2px solid var(--font-color);
   outline-offset: 4px;
 }
 
-#aside-content #card-info-btn[href='/files/ling-chao-resume.pdf'] {
+#aside-content #card-info-btn[href='/files/ling-chao-resume-20261020.pdf'] {
   background: #a8b5a0;
   color: #243024;
 }
 
-#aside-content #card-info-btn[href='/files/ling-chao-resume.pdf']:hover {
+#aside-content #card-info-btn[href='/files/ling-chao-resume-20261020.pdf']:hover {
   background: #9d8189;
   color: #172017;
 }
